@@ -77,29 +77,31 @@
 
     const items2 = [
       {
-        "w": 24,
+        "w": 12,
         "x": 0,
         "y": 0,
-        "sizeToContent": 25,
+        "sizeToContent": 12,
         "id": "component335776_false_338410_483683undefinedundefined",
         "content": `<div style="height:500px">Findings</div>`
       },
       {
-        "w": 24,
-        "x": 0,
-        "y": 26,
-        "sizeToContent": 24,
+        "w": 12,
+        "x": 13,
+        "y": 0, //sizeToContent of above value
+        "sizeToContent": 40,
         "id": "component376901",
-        "content": `<div style="height:500px">Attachments</div>`
+        "content": `<div style="height:1000px">Attachments</div>`
       }
     ]
     items.forEach(n => n.id = String(count++));
     let opts = {
       margin: 5,
-      cellHeight: 'auto', // = 48px
+      cellHeight: 'auto', //'35.4', // = 48px
       sizeToContent: true, // default to make them all fit
       resizable: { handles: 'all' }, // do all sides for testing
       acceptWidgets: true,
+      minRow:24,
+      column:24,
       // cellHeightThrottle: 100, // ms before sizeToContent happens
       // children: items, // test loading first
     }
