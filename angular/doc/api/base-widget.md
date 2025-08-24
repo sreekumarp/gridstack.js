@@ -4,7 +4,7 @@
 
 ### `abstract` BaseWidget
 
-Defined in: [angular/projects/lib/src/lib/base-widget.ts:39](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L39)
+Defined in: [angular/projects/lib/src/lib/base-widget.ts:39](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L39)
 
 Base widget class for GridStack Angular integration.
 
@@ -28,7 +28,7 @@ new BaseWidget(): BaseWidget;
 serialize(): undefined | NgCompInputs;
 ```
 
-Defined in: [angular/projects/lib/src/lib/base-widget.ts:66](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L66)
+Defined in: [angular/projects/lib/src/lib/base-widget.ts:66](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L66)
 
 Override this method to return serializable data for this widget.
 
@@ -59,7 +59,7 @@ serialize() {
 deserialize(w): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/base-widget.ts:88](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L88)
+Defined in: [angular/projects/lib/src/lib/base-widget.ts:88](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L88)
 
 Override this method to handle widget restoration from saved data.
 
@@ -93,4 +93,4 @@ deserialize(w: NgGridStackWidget) {
 
 | Property | Modifier | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="widgetitem"></a> `widgetItem?` | `public` | [`NgGridStackWidget`](types.md#nggridstackwidget) | Complete widget definition including position, size, and Angular-specific data. Populated automatically when the widget is loaded or saved. | [angular/projects/lib/src/lib/base-widget.ts:45](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L45) |
+| <a id="widgetitem"></a> `widgetItem?` | `public` | [`NgGridStackWidget`](types.md#nggridstackwidget) | Complete widget definition including position, size, and Angular-specific data. Populated automatically when the widget is loaded or saved. | [angular/projects/lib/src/lib/base-widget.ts:45](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/base-widget.ts#L45) |

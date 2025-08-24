@@ -4,7 +4,7 @@
 
 ### ~~GridstackModule~~
 
-Defined in: [angular/projects/lib/src/lib/gridstack.module.ts:44](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.module.ts#L44)
+Defined in: [angular/projects/lib/src/lib/gridstack.module.ts:44](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.module.ts#L44)
 
 #### Deprecated
 

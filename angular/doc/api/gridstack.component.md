@@ -4,7 +4,7 @@
 
 ### GridstackComponent
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:85](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L85)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:85](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L85)
 
 Angular component wrapper for GridStack.
 
@@ -40,7 +40,7 @@ Use in combination with GridstackItemComponent for individual grid items.
 get options(): GridStackOptions;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:120](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L120)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:120](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L120)
 
 Get the current running grid options
 
@@ -54,7 +54,7 @@ Get the current running grid options
 set options(o): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:112](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L112)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:112](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L112)
 
 Grid configuration options.
 Can be set before grid initialization or updated after grid is created.
@@ -87,7 +87,7 @@ gridOptions: GridStackOptions = {
 get el(): GridCompHTMLElement;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:190](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L190)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:190](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L190)
 
 Get the native DOM element that contains grid-specific fields.
 This element has GridStack properties attached to it.
@@ -104,7 +104,7 @@ This element has GridStack properties attached to it.
 get grid(): undefined | GridStack;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:201](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L201)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:201](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L201)
 
 Get the underlying GridStack instance.
 Use this to access GridStack API methods directly.
@@ -127,7 +127,7 @@ this.gridComponent.grid.addWidget({x: 0, y: 0, w: 2, h: 1});
 new GridstackComponent(elementRef): GridstackComponent;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:252](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L252)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:252](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L252)
 
 ###### Parameters
 
@@ -147,7 +147,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:252](https://gi
 static addComponentToSelectorType(typeList): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:234](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L234)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:234](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L234)
 
 Register a list of Angular components for dynamic creation.
 
@@ -176,7 +176,7 @@ GridstackComponent.addComponentToSelectorType([
 static getSelector(type): string;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:243](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L243)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:243](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L243)
 
 Extract the selector string from an Angular component type.
 
@@ -198,7 +198,7 @@ The component's selector string
 ngOnInit(): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:266](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L266)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:266](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L266)
 
 A callback method that is invoked immediately after the
 default change detector has checked the directive's
@@ -222,7 +222,7 @@ OnInit.ngOnInit
 ngAfterContentInit(): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:276](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L276)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:276](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L276)
 
 wait until after all DOM is ready to init gridstack children (after angular ngFor and sub-components run first)
 
@@ -242,7 +242,7 @@ AfterContentInit.ngAfterContentInit
 ngOnDestroy(): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:284](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L284)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:284](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L284)
 
 A callback method that performs custom clean-up, invoked immediately
 before a directive, pipe, or service instance is destroyed.
@@ -263,7 +263,7 @@ OnDestroy.ngOnDestroy
 updateAll(): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:298](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L298)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:298](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L298)
 
 called when the TEMPLATE (not recommended) list of items changes - get a list of nodes and
 update the layout accordingly (which will take care of adding/removing items changed by Angular)
@@ -278,7 +278,7 @@ update the layout accordingly (which will take care of adding/removing items cha
 checkEmpty(): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:309](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L309)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:309](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L309)
 
 check if the grid is empty, if so show alternative content
 
@@ -292,7 +292,7 @@ check if the grid is empty, if so show alternative content
 protected hookEvents(grid?): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:315](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L315)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:315](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L315)
 
 get all known events as easy to use Outputs for convenience
 
@@ -312,7 +312,7 @@ get all known events as easy to use Outputs for convenience
 protected unhookEvents(grid?): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:342](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L342)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:342](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L342)
 
 ###### Parameters
 
@@ -328,34 +328,34 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:342](https://gi
 
 | Property | Modifier | Type | Default value | Description | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="gridstackitems"></a> `gridstackItems?` | `public` | `QueryList`\<[`GridstackItemComponent`](gridstack-item.component.md#gridstackitemcomponent)\> | `undefined` | List of template-based grid items (not recommended approach). Used to sync between DOM and GridStack internals when items are defined in templates. Prefer dynamic component creation instead. | [angular/projects/lib/src/lib/gridstack.component.ts:92](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L92) |
-| <a id="container"></a> `container?` | `public` | `ViewContainerRef` | `undefined` | Container for dynamic component creation (recommended approach). Used to append grid items programmatically at runtime. | [angular/projects/lib/src/lib/gridstack.component.ts:97](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L97) |
-| <a id="isempty"></a> `isEmpty?` | `public` | `boolean` | `undefined` | Controls whether empty content should be displayed. Set to true to show ng-content with 'empty-content' selector when grid has no items. **Example** `<gridstack [isEmpty]="gridItems.length === 0"> <div empty-content>Drag widgets here to get started</div> </gridstack>` | [angular/projects/lib/src/lib/gridstack.component.ts:133](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L133) |
-| <a id="addedcb"></a> `addedCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when widgets are added to the grid | [angular/projects/lib/src/lib/gridstack.component.ts:151](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L151) |
-| <a id="changecb"></a> `changeCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when grid layout changes | [angular/projects/lib/src/lib/gridstack.component.ts:154](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L154) |
-| <a id="disablecb"></a> `disableCB` | `public` | `EventEmitter`\<[`eventCB`](#eventcb)\> | `undefined` | Emitted when grid is disabled | [angular/projects/lib/src/lib/gridstack.component.ts:157](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L157) |
-| <a id="dragcb"></a> `dragCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted during widget drag operations | [angular/projects/lib/src/lib/gridstack.component.ts:160](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L160) |
-| <a id="dragstartcb"></a> `dragStartCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget drag starts | [angular/projects/lib/src/lib/gridstack.component.ts:163](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L163) |
-| <a id="dragstopcb"></a> `dragStopCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget drag stops | [angular/projects/lib/src/lib/gridstack.component.ts:166](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L166) |
-| <a id="droppedcb-1"></a> `droppedCB` | `public` | `EventEmitter`\<[`droppedCB`](#droppedcb)\> | `undefined` | Emitted when widget is dropped | [angular/projects/lib/src/lib/gridstack.component.ts:169](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L169) |
-| <a id="enablecb"></a> `enableCB` | `public` | `EventEmitter`\<[`eventCB`](#eventcb)\> | `undefined` | Emitted when grid is enabled | [angular/projects/lib/src/lib/gridstack.component.ts:172](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L172) |
-| <a id="removedcb"></a> `removedCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when widgets are removed from the grid | [angular/projects/lib/src/lib/gridstack.component.ts:175](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L175) |
-| <a id="resizecb"></a> `resizeCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted during widget resize operations | [angular/projects/lib/src/lib/gridstack.component.ts:178](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L178) |
-| <a id="resizestartcb"></a> `resizeStartCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget resize starts | [angular/projects/lib/src/lib/gridstack.component.ts:181](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L181) |
-| <a id="resizestopcb"></a> `resizeStopCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget resize stops | [angular/projects/lib/src/lib/gridstack.component.ts:184](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L184) |
-| <a id="ref"></a> `ref` | `public` | \| `undefined` \| `ComponentRef`\<[`GridstackComponent`](#gridstackcomponent)\> | `undefined` | Component reference for dynamic component removal. Used internally when this component is created dynamically. | [angular/projects/lib/src/lib/gridstack.component.ts:207](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L207) |
-| <a id="selectortotype-1"></a> `selectorToType` | `static` | [`SelectorToType`](#selectortotype) | `{}` | Mapping of component selectors to their types for dynamic creation. This enables dynamic component instantiation from string selectors. Angular doesn't provide public access to this mapping, so we maintain our own. **Example** `GridstackComponent.addComponentToSelectorType([MyWidgetComponent]);` | [angular/projects/lib/src/lib/gridstack.component.ts:220](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L220) |
-| <a id="_options"></a> `_options?` | `protected` | `GridStackOptions` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:247](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L247) |
-| <a id="_grid"></a> `_grid?` | `protected` | `GridStack` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:248](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L248) |
-| <a id="_sub"></a> `_sub` | `protected` | `undefined` \| `Subscription` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:249](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L249) |
-| <a id="loaded"></a> `loaded?` | `protected` | `boolean` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:250](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L250) |
-| <a id="elementref"></a> `elementRef` | `readonly` | `ElementRef`\<[`GridCompHTMLElement`](#gridcomphtmlelement)\> | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:252](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L252) |
+| <a id="gridstackitems"></a> `gridstackItems?` | `public` | `QueryList`\<[`GridstackItemComponent`](gridstack-item.component.md#gridstackitemcomponent)\> | `undefined` | List of template-based grid items (not recommended approach). Used to sync between DOM and GridStack internals when items are defined in templates. Prefer dynamic component creation instead. | [angular/projects/lib/src/lib/gridstack.component.ts:92](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L92) |
+| <a id="container"></a> `container?` | `public` | `ViewContainerRef` | `undefined` | Container for dynamic component creation (recommended approach). Used to append grid items programmatically at runtime. | [angular/projects/lib/src/lib/gridstack.component.ts:97](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L97) |
+| <a id="isempty"></a> `isEmpty?` | `public` | `boolean` | `undefined` | Controls whether empty content should be displayed. Set to true to show ng-content with 'empty-content' selector when grid has no items. **Example** `<gridstack [isEmpty]="gridItems.length === 0"> <div empty-content>Drag widgets here to get started</div> </gridstack>` | [angular/projects/lib/src/lib/gridstack.component.ts:133](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L133) |
+| <a id="addedcb"></a> `addedCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when widgets are added to the grid | [angular/projects/lib/src/lib/gridstack.component.ts:151](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L151) |
+| <a id="changecb"></a> `changeCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when grid layout changes | [angular/projects/lib/src/lib/gridstack.component.ts:154](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L154) |
+| <a id="disablecb"></a> `disableCB` | `public` | `EventEmitter`\<[`eventCB`](#eventcb)\> | `undefined` | Emitted when grid is disabled | [angular/projects/lib/src/lib/gridstack.component.ts:157](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L157) |
+| <a id="dragcb"></a> `dragCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted during widget drag operations | [angular/projects/lib/src/lib/gridstack.component.ts:160](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L160) |
+| <a id="dragstartcb"></a> `dragStartCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget drag starts | [angular/projects/lib/src/lib/gridstack.component.ts:163](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L163) |
+| <a id="dragstopcb"></a> `dragStopCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget drag stops | [angular/projects/lib/src/lib/gridstack.component.ts:166](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L166) |
+| <a id="droppedcb-1"></a> `droppedCB` | `public` | `EventEmitter`\<[`droppedCB`](#droppedcb)\> | `undefined` | Emitted when widget is dropped | [angular/projects/lib/src/lib/gridstack.component.ts:169](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L169) |
+| <a id="enablecb"></a> `enableCB` | `public` | `EventEmitter`\<[`eventCB`](#eventcb)\> | `undefined` | Emitted when grid is enabled | [angular/projects/lib/src/lib/gridstack.component.ts:172](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L172) |
+| <a id="removedcb"></a> `removedCB` | `public` | `EventEmitter`\<[`nodesCB`](#nodescb)\> | `undefined` | Emitted when widgets are removed from the grid | [angular/projects/lib/src/lib/gridstack.component.ts:175](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L175) |
+| <a id="resizecb"></a> `resizeCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted during widget resize operations | [angular/projects/lib/src/lib/gridstack.component.ts:178](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L178) |
+| <a id="resizestartcb"></a> `resizeStartCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget resize starts | [angular/projects/lib/src/lib/gridstack.component.ts:181](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L181) |
+| <a id="resizestopcb"></a> `resizeStopCB` | `public` | `EventEmitter`\<[`elementCB`](#elementcb)\> | `undefined` | Emitted when widget resize stops | [angular/projects/lib/src/lib/gridstack.component.ts:184](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L184) |
+| <a id="ref"></a> `ref` | `public` | \| `undefined` \| `ComponentRef`\<[`GridstackComponent`](#gridstackcomponent)\> | `undefined` | Component reference for dynamic component removal. Used internally when this component is created dynamically. | [angular/projects/lib/src/lib/gridstack.component.ts:207](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L207) |
+| <a id="selectortotype-1"></a> `selectorToType` | `static` | [`SelectorToType`](#selectortotype) | `{}` | Mapping of component selectors to their types for dynamic creation. This enables dynamic component instantiation from string selectors. Angular doesn't provide public access to this mapping, so we maintain our own. **Example** `GridstackComponent.addComponentToSelectorType([MyWidgetComponent]);` | [angular/projects/lib/src/lib/gridstack.component.ts:220](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L220) |
+| <a id="_options"></a> `_options?` | `protected` | `GridStackOptions` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:247](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L247) |
+| <a id="_grid"></a> `_grid?` | `protected` | `GridStack` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:248](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L248) |
+| <a id="_sub"></a> `_sub` | `protected` | `undefined` \| `Subscription` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:249](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L249) |
+| <a id="loaded"></a> `loaded?` | `protected` | `boolean` | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:250](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L250) |
+| <a id="elementref"></a> `elementRef` | `readonly` | `ElementRef`\<[`GridCompHTMLElement`](#gridcomphtmlelement)\> | `undefined` | - | [angular/projects/lib/src/lib/gridstack.component.ts:252](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L252) |
 
 ## Interfaces
 
 ### GridCompHTMLElement
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:39](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L39)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:39](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L39)
 
 Extended HTMLElement interface for the grid container.
 Stores a back-reference to the Angular component for integration purposes.
@@ -2860,7 +2860,7 @@ GridHTMLElement.replaceChildren
 
 | Property | Modifier | Type | Description | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="_gridcomp"></a> `_gridComp?` | `public` | [`GridstackComponent`](#gridstackcomponent) | Back-reference to the Angular GridStack component | - | [angular/projects/lib/src/lib/gridstack.component.ts:41](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L41) |
+| <a id="_gridcomp"></a> `_gridComp?` | `public` | [`GridstackComponent`](#gridstackcomponent) | Back-reference to the Angular GridStack component | - | [angular/projects/lib/src/lib/gridstack.component.ts:41](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L41) |
 | <a id="ariaatomic"></a> `ariaAtomic` | `public` | `null` \| `string` | - | `GridHTMLElement.ariaAtomic` | node\_modules/typescript/lib/lib.dom.d.ts:2020 |
 | <a id="ariaautocomplete"></a> `ariaAutoComplete` | `public` | `null` \| `string` | - | `GridHTMLElement.ariaAutoComplete` | node\_modules/typescript/lib/lib.dom.d.ts:2021 |
 | <a id="ariabusy"></a> `ariaBusy` | `public` | `null` \| `string` | - | `GridHTMLElement.ariaBusy` | node\_modules/typescript/lib/lib.dom.d.ts:2022 |
@@ -3095,7 +3095,7 @@ function gsCreateNgComponents(
    isGrid): undefined | HTMLElement;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:353](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L353)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:353](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L353)
 
 can be used when a new item needs to be created, which we do as a Angular component, or deleted (skip)
 
@@ -3120,7 +3120,7 @@ can be used when a new item needs to be created, which we do as a Angular compon
 function gsSaveAdditionalNgInfo(n, w): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:437](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L437)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:437](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L437)
 
 called for each item in the grid - check if additional information needs to be saved.
 Note: since this is options minus gridstack protected members using Utils.removeInternalForSave(),
@@ -3146,7 +3146,7 @@ using BaseWidget.serialize()
 function gsUpdateNgComponents(n): void;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:456](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L456)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:456](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L456)
 
 track when widgeta re updated (rather than created) to make sure we de-serialize them as well
 
@@ -3168,7 +3168,7 @@ track when widgeta re updated (rather than created) to make sure we de-serialize
 type eventCB = object;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:24](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L24)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:24](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L24)
 
 Callback for general events (enable, disable, etc.)
 
@@ -3180,7 +3180,7 @@ Callback for general events (enable, disable, etc.)
 event: Event;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:24](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L24)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:24](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L24)
 
 ***
 
@@ -3190,7 +3190,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:24](https://git
 type elementCB = object;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
 
 Callback for element-specific events (resize, drag, etc.)
 
@@ -3202,7 +3202,7 @@ Callback for element-specific events (resize, drag, etc.)
 event: Event;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
 
 ##### el
 
@@ -3210,7 +3210,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://git
 el: GridItemHTMLElement;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L27)
 
 ***
 
@@ -3220,7 +3220,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:27](https://git
 type nodesCB = object;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
 
 Callback for events affecting multiple nodes (change, etc.)
 
@@ -3232,7 +3232,7 @@ Callback for events affecting multiple nodes (change, etc.)
 event: Event;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
 
 ##### nodes
 
@@ -3240,7 +3240,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://git
 nodes: GridStackNode[];
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L30)
 
 ***
 
@@ -3250,7 +3250,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:30](https://git
 type droppedCB = object;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
 
 Callback for drop events with before/after node state
 
@@ -3262,7 +3262,7 @@ Callback for drop events with before/after node state
 event: Event;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
 
 ##### previousNode
 
@@ -3270,7 +3270,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://git
 previousNode: GridStackNode;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
 
 ##### newNode
 
@@ -3278,7 +3278,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://git
 newNode: GridStackNode;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L33)
 
 ***
 
@@ -3288,7 +3288,7 @@ Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:33](https://git
 type SelectorToType = object;
 ```
 
-Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:48](https://github.com/adumesny/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L48)
+Defined in: [angular/projects/lib/src/lib/gridstack.component.ts:48](https://github.com/gridstack/gridstack.js/blob/master/angular/projects/lib/src/lib/gridstack.component.ts#L48)
 
 Mapping of selector strings to Angular component types.
 Used for dynamic component creation based on widget selectors.
