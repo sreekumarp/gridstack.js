@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sizeToContent demo</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>sizeToContent demo</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script src="../dist/gridstack-all.js"></script>
+    <style type="text/css">
+      .grid-stack-item-content {
+        text-align: unset;
+      }
 
-  <link rel="stylesheet" href="demo.css" />
-  <script src="../dist/gridstack-all.js"></script>
-  <style type="text/css">
-    .grid-stack-item-content {
-      text-align: unset;
-    }
+      .sidebar.inline {
+        width: fit-content;
+        height: fit-content;
+        display: inline-block;
+        padding: 0;
+      }
+    </style>
+  </head>
 
-    .sidebar.inline {
-      width: fit-content;
-      height: fit-content;
-      display: inline-block;
-      padding: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <!-- <h1>sizeToContent options demo</h1>
+  <body>
+    <div class="container">
+      <!-- <h1>sizeToContent options demo</h1>
     <p>New 9.x feature that size the items to fit their content height as to not have scroll bars
       <br>case C: `sizeToContent:false` to turn off.
       <br>case E: has soft maxsize `sizeToContent:3`, shrinking to smaller content as needed
@@ -54,102 +53,129 @@
       </div>
     </div>
     <br> -->
-    <div style="height: 850px; padding: 10px; border-radius: 10px; overflow: auto; background-color: rgb(229, 185, 185);">
-    <div id="grid1"></div></div>
-  </div>
-  <script type="text/javascript">
-    // NOTE: REAL apps would sanitize-html or DOMPurify before blinding setting innerHTML. see #2736
-    GridStack.renderCB = function (el, w) {
-      el.innerHTML = w.content;
-    };
+      <div
+        style="
+          height: 743px;
+          padding: 10px;
+          border-radius: 10px;
+          overflow: auto;
+          background-color: rgb(229, 185, 185);
+        "
+      >
+        <div id="grid1"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // NOTE: REAL apps would sanitize-html or DOMPurify before blinding setting innerHTML. see #2736
+      GridStack.renderCB = function (el, w) {
+        el.innerHTML = w.content;
+      };
 
-    let text = 'some very large content that will normally not fit in the window.'
-    text = text + text;
-    let count = 0;
-    let items = [
-      // {x:0, y:0, w:2, h:3, sizeToContent: false, content: `<div>A no h: ${text}</div>`},
-      { x: 0, y: 0, w: 2, content: `<div>A no h: ${text}</div>` },
-      { x: 2, y: 0, w: 1, h: 2, content: '<div>B: shrink h=2</div>' }, // make taller than needed upfront
-      { x: 3, y: 0, w: 2, sizeToContent: false, content: `<div>C: WILL SCROLL. ${text}</div>` }, // prevent this from fitting testing
-      { x: 0, y: 1, w: 3, content: `<div>D no h: ${text} ${text}</div>` },
-      { x: 3, y: 1, w: 2, sizeToContent: 3, content: `<div>E sizeToContent=3 <button onClick="more()">more</button><button onClick="less()">less</button><div id="dynContent">${text} ${text} ${text}</div></div>` },
-    ];
+      let text =
+        "some very large content that will normally not fit in the window.";
+      text = text + text;
+      let count = 0;
+      let items = [
+        // {x:0, y:0, w:2, h:3, sizeToContent: false, content: `<div>A no h: ${text}</div>`},
+        { x: 0, y: 0, w: 2, content: `<div>A no h: ${text}</div>` },
+        { x: 2, y: 0, w: 1, h: 2, content: "<div>B: shrink h=2</div>" }, // make taller than needed upfront
+        {
+          x: 3,
+          y: 0,
+          w: 2,
+          sizeToContent: false,
+          content: `<div>C: WILL SCROLL. ${text}</div>`,
+        }, // prevent this from fitting testing
+        { x: 0, y: 1, w: 3, content: `<div>D no h: ${text} ${text}</div>` },
+        {
+          x: 3,
+          y: 1,
+          w: 2,
+          sizeToContent: 3,
+          content: `<div>E sizeToContent=3 <button onClick="more()">more</button><button onClick="less()">less</button><div id="dynContent">${text} ${text} ${text}</div></div>`,
+        },
+      ];
 
-    const items2 = [
-      {
-        "w": 12,
-        "x": 0,
-        "y": 0,
-        "sizeToContent": 12,
-        "id": "component335776_false_338410_483683undefinedundefined",
-        "content": `<div style="height:500px">Findings</div>`
-      },
-      {
-        "w": 12,
-        "x": 13,
-        "y": 0, //sizeToContent of above value
-        "sizeToContent": 40,
-        "id": "component376901",
-        "content": `<div style="height:1000px">Attachments</div>`
+      const items2 = [
+        {
+          w: 12,
+          x: 0,
+          y: 0,
+          maxH: 500,
+          //minH: "4px",
+          sizeToContent: 12,
+          id: "component335776_false_338410_483683undefinedundefined",
+          content: `<div style="height:500px">Findings</div>`,
+        },
+        {
+          w: 12,
+          x: 13,
+          maxH: 40,
+          y: 0, //sizeToContent of above value
+          sizeToContent: 24,
+          id: "component376901",
+          content: `<div style="height:1000px">Attachments</div>`,
+        },
+      ];
+      items.forEach((n) => (n.id = String(count++)));
+      let opts = {
+        margin: 5,
+        cellHeight: "27.45", //'35.4', // = 48px
+        sizeToContent: true, // default to make them all fit
+        resizable: { handles: "all" }, // do all sides for testing
+        acceptWidgets: true,
+        minRow: 27,
+        column: 24,
+        // cellHeightThrottle: 100, // ms before sizeToContent happens
+        // children: items, // test loading first
+      };
+      let grid = GridStack.init(opts, "#grid1");
+      grid.load(items2); // test loading after
+      GridStack.init({ ...opts, children: undefined }, "#grid2");
+
+      GridStack.setupDragIn(".sidebar>.grid-stack-item");
+
+      function clearGrid() {
+        grid.removeAll();
       }
-    ]
-    items.forEach(n => n.id = String(count++));
-    let opts = {
-      margin: 5,
-      cellHeight: 'auto', //'35.4', // = 48px
-      sizeToContent: true, // default to make them all fit
-      resizable: { handles: 'all' }, // do all sides for testing
-      acceptWidgets: true,
-      minRow:24,
-      column:24,
-      // cellHeightThrottle: 100, // ms before sizeToContent happens
-      // children: items, // test loading first
-    }
-    let grid = GridStack.init(opts, '#grid1');
-    grid.load(items2); // test loading after
-    GridStack.init({ ...opts, children: undefined }, '#grid2');
+      function load() {
+        grid.load(items);
+      }
+      function column(n) {
+        grid.column(n, "none");
+      }
+      function cellHeight(n) {
+        grid.cellHeight(n);
+      }
+      function addWidget() {
+        grid.addWidget({ content: `<div>New: ${text}</div>` });
+      }
+      function makeWidget() {
+        let el = grid.createWidgetDivs(
+          { content: `<div>New Make: ${text}</div>` },
+          grid.el
+        );
+        grid.makeWidget(el, { w: 2 });
+      }
+      function more() {
+        let cont = document.getElementById("dynContent");
+        if (!cont) return;
+        cont.innerHTML += cont.innerHTML;
+        let el = cont.parentElement.parentElement.parentElement;
+        grid.resizeToContent(el);
+      }
+      function less() {
+        let cont = document.getElementById("dynContent");
+        if (!cont) return;
+        let content = cont.innerHTML;
+        cont.innerHTML = content.substring(0, content.length / 2);
+        let el = cont.parentElement.parentElement.parentElement;
+        grid.resizeToContent(el);
+      }
 
-    GridStack.setupDragIn('.sidebar>.grid-stack-item');
-
-    function clearGrid() {
-      grid.removeAll();
-    }
-    function load() {
-      grid.load(items);
-    }
-    function column(n) {
-      grid.column(n, 'none');
-    }
-    function cellHeight(n) {
-      grid.cellHeight(n);
-    }
-    function addWidget() {
-      grid.addWidget({ content: `<div>New: ${text}</div>` });
-    }
-    function makeWidget() {
-      let el = grid.createWidgetDivs({ content: `<div>New Make: ${text}</div>` }, grid.el)
-      grid.makeWidget(el, { w: 2 });
-    }
-    function more() {
-      let cont = document.getElementById('dynContent');
-      if (!cont) return;
-      cont.innerHTML += cont.innerHTML;
-      let el = cont.parentElement.parentElement.parentElement;
-      grid.resizeToContent(el)
-    }
-    function less() {
-      let cont = document.getElementById('dynContent');
-      if (!cont) return;
-      let content = cont.innerHTML;
-      cont.innerHTML = content.substring(0, content.length / 2);
-      let el = cont.parentElement.parentElement.parentElement;
-      grid.resizeToContent(el);
-    }
-
-    // TEST
-    // grid.update(grid.engine.nodes[0].el, {x:7});
-    // load();
-  </script>
-</body>
-
+      // TEST
+      // grid.update(grid.engine.nodes[0].el, {x:7});
+      // load();
+    </script>
+  </body>
 </html>
